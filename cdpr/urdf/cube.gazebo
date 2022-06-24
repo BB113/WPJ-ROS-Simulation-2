@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<robot>
+  <!-- ros_control plugin -->
+
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/cdpr</robotNamespace>
+    </plugin>
+  </gazebo>
+
+  <transmission name="lift_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_cable0">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>  
+    <actuator name="lift_motor_0">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="lift_transmission_1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_cable1">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>  
+    <actuator name="lift_motor_1">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="lift_transmission_2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_cable2">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>  
+    <actuator name="lift_motor_2">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="lift_transmission_3">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_cable3">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>  
+    <actuator name="lift_motor_3">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="lift_transmission_4">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_cable4">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>  
+    <actuator name="lift_motor_4">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="lift_transmission_5">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_cable5">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>  
+    <actuator name="lift_motor_5">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="lift_transmission_6">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_cable6">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>  
+    <actuator name="lift_motor_6">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="lift_transmission_7">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_cable7">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>  
+    <actuator name="lift_motor_7">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+</robot>
